@@ -12,7 +12,7 @@ app.use(express.json());
 // Allow React app to talk to backend
 app.use(
   cors({
-    origin: "http://localhost:5173", // your frontend port
+    origin: "*", // your frontend port
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
