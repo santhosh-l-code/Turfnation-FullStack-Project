@@ -1,0 +1,209 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "name": "Cricket",
+      "imageUrl": "./images/cricket-home.png",
+      "turfs": [
+        {
+          "id": 101,
+          "name": "Katpadi Cricket Ground",
+          "location": "Katpadi",
+          "imageUrl": "/images/turfs/cricket-katpadi.png",
+          "pricePerHour": 500,
+          "contact": "9876543210",
+          "description": "A well-maintained cricket ground located in Katpadi, equipped with turf pitch and night lights.",
+          "slots": ["9am-10am", "10am-11am"],
+          "bookings": {
+            "2025-11-07": ["9am-10am"]
+          },
+          "ownerId": 1
+        },
+        {
+          "id": 102,
+          "name": "Sainathapuram Cricket Ground",
+          "location": "Sainathapuram",
+          "imageUrl": "/images/turfs/cricket-sainathapuram.png",
+          "pricePerHour": 450,
+          "contact": "9876501234",
+          "description": "Spacious cricket ground ideal for weekend matches and tournaments.",
+          "slots": ["9am-10am", "10am-11am"],
+          "bookings": {},
+          "ownerId": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Football",
+      "imageUrl": "./images/football-home.png",
+      "turfs": [
+        {
+          "id": 201,
+          "name": "City Football Arena",
+          "location": "Main City",
+          "imageUrl": "/images/turfs/football-city.png",
+          "pricePerHour": 600,
+          "contact": "9888776655",
+          "description": "Well-maintained football turf located in the heart of the city with floodlights and changing rooms.",
+          "slots": ["9am-10am", "10am-11am"],
+          "bookings": {
+            "2025-11-07": ["10am-11am"]
+          },
+          "ownerId": 2
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Tennis",
+      "imageUrl": "./images/tennis-home.png",
+      "turfs": [
+        {
+          "id": 301,
+          "name": "Greenfield Tennis Court",
+          "location": "Gandhi Nagar",
+          "imageUrl": "/images/turfs/tennis-greenfield.png",
+          "pricePerHour": 300,
+          "contact": "9765432189",
+          "description": "Synthetic surface tennis court suitable for both beginners and professionals.",
+          "slots": ["8am-9am", "9am-10am"],
+          "bookings": {},
+          "ownerId": 3
+        },
+        {
+          "id": 302,
+          "name": "Vellore Tennis Club",
+          "location": "Katpadi",
+          "imageUrl": "/images/turfs/tennis-vellore.png",
+          "pricePerHour": 350,
+          "contact": "9876501122",
+          "description": "Popular tennis club with outdoor and indoor courts in Katpadi.",
+          "slots": ["10am-11am", "11am-12pm"],
+          "bookings": {
+            "2025-11-08": ["10am-11am"]
+          },
+          "ownerId": 3
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Badminton",
+      "imageUrl": "./images/badminton-home.png",
+      "turfs": [
+        {
+          "id": 401,
+          "name": "Indoor Badminton Arena",
+          "location": "VIT Campus",
+          "imageUrl": "/images/turfs/badminton-vit.png",
+          "pricePerHour": 250,
+          "contact": "9123456789",
+          "description": "Indoor badminton court with high-quality flooring and lighting within VIT campus.",
+          "slots": ["7am-8am", "8am-9am"],
+          "bookings": {},
+          "ownerId": 4
+        },
+        {
+          "id": 402,
+          "name": "ABC Sports Club",
+          "location": "Sainathapuram",
+          "imageUrl": "/images/turfs/badminton-abc.png",
+          "pricePerHour": 300,
+          "contact": "9823456789",
+          "description": "Local favorite badminton arena with synthetic courts and training sessions available.",
+          "slots": ["5pm-6pm", "6pm-7pm"],
+          "bookings": {
+            "2025-11-07": ["6pm-7pm"]
+          },
+          "ownerId": 4
+        }
+      ]
+    }
+  ],
+
+  "users": [
+    {
+      "id": 1,
+      "name": "Santhosh",
+      "email": "santhosh@gmail.com",
+      "password": "hashed_password_123",
+      "phone": "9876543210",
+      "role": "user",
+      "bookings": ["B001", "B002"]
+    },
+    {
+      "id": 2,
+      "name": "Ravi Kumar",
+      "email": "ravi@gmail.com",
+      "password": "hashed_password_456",
+      "phone": "9898989898",
+      "role": "user",
+      "bookings": []
+    }
+  ],
+
+  "owners": [
+    {
+      "id": 1,
+      "name": "Ramesh",
+      "email": "ramesh.turf@gmail.com",
+      "password": "hashed_owner_101",
+      "phone": "9000000001",
+      "role": "owner",
+      "ownedTurfs": [101, 102]
+    },
+    {
+      "id": 2,
+      "name": "John Mathew",
+      "email": "john.football@gmail.com",
+      "password": "hashed_owner_102",
+      "phone": "9000000002",
+      "role": "owner",
+      "ownedTurfs": [201]
+    },
+    {
+      "id": 3,
+      "name": "Suresh",
+      "email": "suresh.tennis@gmail.com",
+      "password": "hashed_owner_103",
+      "phone": "9000000003",
+      "role": "owner",
+      "ownedTurfs": [301, 302]
+    },
+    {
+      "id": 4,
+      "name": "Rajesh",
+      "email": "rajesh.badminton@gmail.com",
+      "password": "hashed_owner_104",
+      "phone": "9000000004",
+      "role": "owner",
+      "ownedTurfs": [401, 402]
+    }
+  ],
+
+  "bookings": [
+    {
+      "bookingId": "B001",
+      "turfId": 101,
+      "userId": 1,
+      "gameName": "Cricket",
+      "turfName": "Katpadi Cricket Ground",
+      "date": "2025-11-07",
+      "slot": "9am-10am",
+      "price": 500,
+      "status": "confirmed"
+    },
+    {
+      "bookingId": "B002",
+      "turfId": 102,
+      "userId": 1,
+      "gameName": "Cricket",
+      "turfName": "Sainathapuram Cricket Ground",
+      "date": "2025-11-08",
+      "slot": "10am-11am",
+      "price": 450,
+      "status": "confirmed"
+    }
+  ]
+}
