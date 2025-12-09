@@ -5,7 +5,7 @@ import Footer from "./Footer";
 import { CalendarDays, Clock, CheckCircle2, MapPin } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
-const API_BASE = "http://localhost:5000";
+const API_BASE = "https://turfnation-backend.onrender.com";
 
 const MyDashboard = () => {
     const navigate = useNavigate();

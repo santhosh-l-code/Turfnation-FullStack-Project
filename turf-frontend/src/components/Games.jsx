@@ -3,7 +3,7 @@ import axios from "axios";
 import Game from "./Game";
 import { NavLink } from "react-router-dom";
 
-const API_BASE = "http://localhost:5000"; // change if your backend runs elsewhere
+const API_BASE = "https://turfnation-backend.onrender.com"; // change if your backend runs elsewhere
 
 const Games = () => {
     const [games, setGames] = useState([]);

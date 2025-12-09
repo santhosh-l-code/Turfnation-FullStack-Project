@@ -5,7 +5,7 @@ import TurfCard from "./TurfCard";
 import Footer from "./Footer";
 import { NavLink, useParams } from "react-router-dom";
 
-const API_BASE = "http://localhost:5000";
+const API_BASE = "https://turfnation-backend.onrender.com";
 
 const Turfs = () => {
     const { gameId } = useParams();

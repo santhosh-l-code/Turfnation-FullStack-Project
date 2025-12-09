@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { MapPin, Clock, Users, Phone } from "lucide-react";
 
-const API_BASE = "http://localhost:5000"; // your backend
+const API_BASE = "https://turfnation-backend.onrender.com"; // your backend
 
 const TurfDetails = () => {
     const { turfId } = useParams();

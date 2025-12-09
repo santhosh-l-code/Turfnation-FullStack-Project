@@ -5,7 +5,7 @@ import Navbar from "../Navbar";
 import Footer from "../Footer";
 import axios from "axios";
 
-const API_BASE = "http://localhost:5000";
+const API_BASE = "https://turfnation-backend.onrender.com";
 
 const Signup = () => {
     const navigate = useNavigate();
@@ -212,8 +212,8 @@ const Signup = () => {
                             <div className="flex flex-col gap-3">
                                 <label
                                     className={`flex items-center gap-3 p-3 rounded-lg border cursor-pointer transition ${formData.role === "user"
-                                            ? "border-green-500 bg-green-50"
-                                            : "border-gray-300"
+                                        ? "border-green-500 bg-green-50"
+                                        : "border-gray-300"
                                         }`}
                                     onClick={() => setFormData({ ...formData, role: "user" })}
                                 >
@@ -234,8 +234,8 @@ const Signup = () => {
 
                                 <label
                                     className={`flex items-center gap-3 p-3 rounded-lg border cursor-pointer transition ${formData.role === "owner"
-                                            ? "border-green-500 bg-green-50"
-                                            : "border-gray-300"
+                                        ? "border-green-500 bg-green-50"
+                                        : "border-gray-300"
                                         }`}
                                     onClick={() => setFormData({ ...formData, role: "owner" })}
                                 >

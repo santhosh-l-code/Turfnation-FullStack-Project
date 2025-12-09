@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { CheckCircle2, Loader2 } from "lucide-react";
 
-const API_BASE = "http://localhost:5000";
+const API_BASE = "https://turfnation-backend.onrender.com";
 
 const PaymentPage = () => {
     const navigate = useNavigate();
@@ -73,8 +73,8 @@ const PaymentPage = () => {
                         <label
                             key={method}
                             className={`flex items-center gap-2 p-2 rounded-md cursor-pointer border transition ${paymentMethod === method
-                                    ? "border-green-600 bg-green-50"
-                                    : "border-gray-300"
+                                ? "border-green-600 bg-green-50"
+                                : "border-gray-300"
                                 }`}
                         >
                             <input

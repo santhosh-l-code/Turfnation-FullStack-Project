@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { Trash2, Edit3 } from "lucide-react";
 
-const API_BASE = "http://localhost:5000";
+const API_BASE = "https://turfnation-backend.onrender.com";
 
 const OwnerDashboard = () => {
     const [turfs, setTurfs] = useState([]);

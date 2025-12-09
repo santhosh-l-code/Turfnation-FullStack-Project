@@ -5,7 +5,7 @@ import Navbar from "../Navbar";
 import Footer from "../Footer";
 import axios from "axios";
 
-const API_BASE = "http://localhost:5000";
+const API_BASE = "https://turfnation-backend.onrender.com";
 
 const Login = () => {
     const navigate = useNavigate();
@@ -131,8 +131,8 @@ const Login = () => {
                             type="submit"
                             disabled={loading}
                             className={`mt-3 flex justify-center items-center gap-2 py-2 rounded-md font-semibold transition ${loading
-                                    ? "bg-gray-400 cursor-not-allowed"
-                                    : "bg-green-600 text-white hover:bg-green-700"
+                                ? "bg-gray-400 cursor-not-allowed"
+                                : "bg-green-600 text-white hover:bg-green-700"
                                 }`}
                         >
                             {loading ? "Logging in..." : <><LogIn size={18} /> Log In</>}
